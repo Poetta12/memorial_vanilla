@@ -1,0 +1,162 @@
+/* Default Styles (Desktop) */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.landing-view {
+	transition: opacity 1.5s ease-in-out;
+}
+
+.fade-out {
+	opacity: 0;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.content {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	height: 100vh;
+}
+
+/* Hero section */
+.section.hero {
+	width: 100%;
+	height: 50vh;
+}
+
+/* Gradient sections */
+.section {
+	width: 100%;
+	height: 25vh;
+}
+
+.gradient-purple {
+	background: linear-gradient(to bottom, #800080, #e1bee7);
+}
+
+.gradient-blue {
+	background: linear-gradient(to bottom, #2196F3, #BBDEFB);
+}
+
+/* Image container and overlay */
+.image-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.image-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bye {
+	z-index: 1;
+}
+
+.fenetre {
+	z-index: 2;
+}
+
+.light-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 1;
+	transition: opacity 0.1s ease;
+}
+
+/* Elegant tribute for my father */
+.tribute-banner {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	font-family: 'Georgia', serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	z-index: 100;
+	opacity: 0.95;
+}
+
+/* Note/text to enable music */
+.music-note {
+	position: fixed;
+	top: 70px;
+	right: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #333;
+	padding: 8px 12px;
+	border-radius: 5px;
+	font-size: 0.9em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 100;
+}
+
+/* Responsive font sizes */
+@media (max-width: 1024px) {
+	.tribute-banner {
+		font-size: 1.3em;
+	}
+
+	.music-note {
+		font-size: 0.85em;
+	}
+}
+
+@media (max-width: 768px) {
+	.tribute-banner {
+		font-size: 1.1em;
+	}
+
+	.music-note {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 480px) {
+	.tribute-banner {
+		font-size: 1em;
+		padding: 10px 0;
+	}
+
+	.music-note {
+		position: fixed;
+		top: 90%;
+		right: 50%;
+		transform: translateX(50%);
+		width: auto;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		font-size: 0.75em;
+		padding: 8px 12px;
+		border-radius: 8px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		text-align: center;
+		z-index: 100;
+	}
+}
